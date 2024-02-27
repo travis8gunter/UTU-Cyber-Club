@@ -1,0 +1,45 @@
+.content-section {
+    .accomp-section {
+      h2{
+        color: #fff;
+      }
+      .accomplishment-item {
+        flex-basis: calc(33.333% - 20px); // 3 items per row, accounting for gap
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease; 
+      
+        img {
+          width: 100%;
+          height: auto;
+        }
+      
+        &:hover {
+          transform: scale(1.05); 
+        }
+      
+        .item-title, .short-description, .detailed-text {
+          transition: color 0.3s ease; 
+        }
+      
+        .item-title {
+          color: #007bff; 
+        }
+      
+        .short-description {
+          color: #666; 
+        }
+      
+        .detailed-text {
+          color: #333; 
+        }
+      
+        @media (max-width: 768px) {
+          flex-basis: 100%; // Stack vertically on smaller screens
+        }
+      }
+      
+    }
+}
+  
+  

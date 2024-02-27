@@ -1,0 +1,112 @@
+.about-container {
+    margin: auto;
+    padding: 20px;
+    max-width: 800px;
+    padding-bottom: 150px;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      justify-content: center;
+      display: flex;
+      color: #fff;
+    }
+  
+    .about-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: justify;
+      color: #fff;
+    }
+    //TEAM STYLES
+    .team-section {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        color: #fff;
+        align-items: center;
+        margin-top: 40px; // Space from the above content
+    
+        .team-image {
+          width: 100%;
+          object-fit: cover;
+        }
+    
+        .team-content {
+          color: #fff;
+        }
+
+  }
+  
+  // Responsive design for smaller devices
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 10px;
+    }
+  }
+  //CTF STYLES
+  .ctf-section, .team-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px; 
+
+    &:nth-child(odd) { 
+      grid-template-columns: 2fr 1fr; // Image on the right for CTF
+    }
+
+    .ctf-image, .team-image {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .ctf-content, .team-content {
+      color: #fff;
+    }
+  }
+  //LEARN STYLES
+  .learn-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 40px;
+  
+    .learn-image {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  
+    .learn-content {
+        color: #fff;
+        order: 2;
+    }
+  }
+} 
+@media (max-width: 768px) {
+.learn-section {
+    grid-template-columns: 1fr; // On smaller screens, it goes to a single column
+  
+    .learn-image {
+    max-width: 80%;
+    margin-bottom: 20px;
+    }
+  
+  .learn-content {
+    order: 2; 
+    }
+}
+}
+  
+
+@media (max-width: 768px) {
+  .ctf-section, .team-section {
+    grid-template-columns: 1fr; // Stack on smaller screens
+
+    .ctf-image, .team-image {
+      max-width: 100%;
+    }
+  }
+  
+}
