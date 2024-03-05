@@ -26,7 +26,7 @@
       padding: 2rem;
       h2 {
         text-align: center;
-        color: #333; 
+        color: #fff; 
       }
       
     }
@@ -46,8 +46,13 @@
           height: auto;
         }
 
-        h3, p {
+        h3 {
           margin: 0.5rem 0;
+          color: #1900fb !important ;
+        }
+        p {
+          margin: 0.5rem 0;
+          color: #fff !important; 
         }
       }
     }

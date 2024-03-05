@@ -28,13 +28,13 @@ $highlight-color: lighten($light-gray, 20%);
     .nav-wrapper {
       display: flex;
       align-items: center;
-      justify-content: flex-start; // Adjusted for nav items to be closer to the logo
-      flex-grow: 1; // Allows the nav-wrapper to fill the space
-      padding-left: 20px; // Adds some padding between the logo and the nav items
+      justify-content: flex-start;
+      flex-grow: 1; //nav-wrapper to fill the space
+      padding-left: 20px; // Adds padding between the logo and nav items
 
       nav {
         display: flex;
-        justify-content: space-around; // Evenly spreads nav items across the available space
+        justify-content: space-around; // Evenly spreads nav items
         width: 100%;
       }
 

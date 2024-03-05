@@ -5,6 +5,7 @@ import './App.scss';
 import Discord from './pages/discord.js';
 import About from './pages/about.js';
 import Home from './pages/home.js';
+import Showcase from './pages/showcase.js';
 
 import NavContainer from './nav-bar/nav-container';
 import Footer from './pages/footer.js';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/discord' element={<Discord />} />
           <Route path='/about' element={<About />} />
+          <Route path='/showcase' element={<Showcase />} />
         </Routes>
       </main>
     <Footer />

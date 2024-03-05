@@ -4,7 +4,7 @@
         color: #fff;
       }
       .accomplishment-item {
-        flex-basis: calc(33.333% - 20px); // 3 items per row, accounting for gap
+        flex-basis: calc(33.333% - 20px); // 3 items per row
         text-align: center;
         cursor: pointer;
         transition: transform 0.3s ease; 

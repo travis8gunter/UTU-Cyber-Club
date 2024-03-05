@@ -1,0 +1,29 @@
+.showcase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    padding-bottom: 150px;
+  }
+  
+  .showcase-item {
+    text-align: center;
+    max-width: 600px; 
+  
+    img {
+      width: 100%; 
+      height: auto;
+      border-radius: 8px; 
+    }
+  
+    h2 {
+      margin: 10px 0;
+      color: #fff; 
+    }
+  
+    p {
+      color: #fff; 
+    }
+  }
+  
