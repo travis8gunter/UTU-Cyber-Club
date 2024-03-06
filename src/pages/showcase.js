@@ -3,6 +3,7 @@ import '../styles/showcase.scss';
 
 import bsidesImage from '../photos/bsideswin.jpg'; 
 import nccdc from '../photos/NCCDC 2.png';
+import guestImage from '../photos/gueest-speaker2.jpg';
 
 
 const showcaseItems = [
@@ -17,6 +18,12 @@ const showcaseItems = [
     imageUrl: nccdc,
     title: 'Collegiate Cyber Defense Competition 2024',
     description: 'Our team competed at the Collegiate Cyber Defense Compeitition (NCCDC) a defensive cyber security competition. We learned a lot, ate snacks and drank mountain dew.'
+  },
+  {
+    id: 3,
+    imageUrl: guestImage,
+    title: 'Guest Speaker Alan Fox, Director of Network Services at UTU',
+    description: "In a recent club session, we welcomed Alan Fox, the Director of Network Services at our university. With extensive experience in networking and cyber security, Mr. Fox offered insights into his career and the challenges of managing complex network infrastructures. His presentation highlighted the importance of network services for the university's security and inspired us with real-world examples and practical advice. Mr. Fox's dedication and expertise motivated us to pursue excellence in the IT and security fields."
   },
   // Add more items here
 ];

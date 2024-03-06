@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/about.scss';
-import teamImage from "../photos/NCCDC 2.png";
+import guestSpeakerImage from "../photos/guest-speaker.jpg";
 import ctfImage from "../photos/ctf.jpeg";
 import learnImage from "../photos/hacker.jpeg";
 
@@ -22,7 +22,7 @@ export default class About extends Component {
       <div className='ctf-section'>
         <div className='ctf-content'>
           <h2>CTF Competitions</h2>
-          <p>Our club actively participates in CTF (Capture The Flag) competitions, which are events focused on cybersecurity challenges and problem-solving.</p>
+          <p>Our club actively participates in CTF (Capture The Flag) and other competitions, which are events focused on cybersecurity challenges that include ethical hacking challenges and problem-solving.</p>
         </div>
         <img src={ctfImage} alt='CTF' className='ctf-image' />
       </div>
@@ -31,11 +31,11 @@ export default class About extends Component {
 
       {/* Grid section */}
       <div className="team-section">
-        <img src={teamImage} alt="The Team" className="team-image" />
+        <img src={guestSpeakerImage} alt="The Team" className="team-image" />
         <div className="team-content">
-          <h2>The Team</h2>
+          <h2>Guest Speakers</h2>
           <p>
-            We are like tech guys who like to do CTFs (Capture The Flag competitions), which are cybersecurity competitions that include ethical hacking challenges and more.
+          Our Cyber Security Club actively invites industry experts to speak at our meetings, offering members direct insights from the field. These sessions with guest speakers are crucial for bridging the gap between theoretical knowledge and real-world practices, enriching our members understanding and preparing them for future challenges in the IT world.
           </p>
         </div>
       </div>
