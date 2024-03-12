@@ -30,7 +30,7 @@ $highlight-color: lighten($light-gray, 20%);
       align-items: center;
       justify-content: flex-start;
       flex-grow: 1; //nav-wrapper to fill the space
-      padding-left: 20px; // Adds padding between the logo and nav items
+      //padding-left: 20px; // Adds padding between the logo and nav items
 
       nav {
         display: flex;
@@ -58,6 +58,31 @@ $highlight-color: lighten($light-gray, 20%);
       display: flex;
       flex-direction: column;
       padding-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 0px;
+
+    .App-logo {
+      width: 150px;
+      justify-content: center;
+    }
+
+    .nav-wrapper {
+      justify-content: center;
+      padding-left: 0px;
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 10px 0;
+      }
     }
   }
 }
