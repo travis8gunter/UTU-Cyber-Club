@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../styles/about.scss';
 import guestSpeakerImage from "../photos/guest-speaker.jpg";
 import ctfImage from "../photos/ctf.jpeg";
-import learnImage from "../photos/NCL-TEAM1 2.jpg";
+import learnImage from "../photos/NCL-TEAM-2.jpeg";
 import jobs from '../photos/about-img.jpeg';
 
 export default class About extends Component {
