@@ -34,6 +34,22 @@
       }
       
     }
+
+    .meeting-time-section {
+      text-align: center;
+      margin: 20px 0;
+  
+      h2 {
+        color: #ffffff;
+        font-family: "Anta", sans-serif;
+        text-decoration: underline;
+      }
+  
+      p {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+      }
+    }
     .accomplishments {
       display: flex;
       flex-wrap: wrap;
