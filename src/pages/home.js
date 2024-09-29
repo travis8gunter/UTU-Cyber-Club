@@ -17,8 +17,8 @@ export default class Home extends Component {
         
         {/* Full header image */}
         <header className="header-image">
-          <img src={homeImage} alt="UTU Cyber Society" />
-          <h1>Welcome to UTU Cyber Society</h1>
+          <img src={homeImage} alt="UTU Cyber Club" />
+          <h1>Welcome to UTU Cyber Club Homepage</h1>
         </header>
         
         {/* Content below header image */}

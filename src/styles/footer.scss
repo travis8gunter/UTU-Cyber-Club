@@ -1,17 +1,65 @@
+@import '../App.scss';
+
 .site-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+  background-color: #424242; 
+  color: $white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
   
-    // footer is at the bottom
-    position: fixed;
-    left: 0;
-    bottom: 0;
-  
-    .footer-content {
-      margin: auto;
+  // Footer is fixed at the bottom of the page
+  position: fixed;
+  left: 0;
+  bottom: 0;
+
+  .footer-content {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .social-media-icons {
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+
+      a {
+        color: $white;
+        font-size: 30px; 
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          color: $logo-blue; // Hover color matching the blue in the logo
+          transform: scale(1.1); // Slight scaling effect on hover
+        }
+      }
     }
   }
-  
+
+  // Media queries for responsiveness
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+
+    .social-media-icons {
+      margin: 15px 0;
+
+      a {
+        font-size: 26px;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .social-media-icons {
+      gap: 10px;
+
+      a {
+        font-size: 24px;
+      }
+    }
+  }
+}

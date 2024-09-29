@@ -3,12 +3,14 @@ $dark-gray: #050505;
 $gray-green: #040706;
 $light-gray: #080a09;
 $white: white;
+$logo-red: #C40217;   // Red from the logo
+$logo-blue: #0563C1;  // Blue from the logo
 $highlight-color: lighten($light-gray, 20%);
 
 // App styles
 .App {
   background-color: $dark-gray;
-  color: $light-gray;
+  color: $white;
   font-family: 'Arial', sans-serif;
   display: flex;
   flex-direction: column;
@@ -29,12 +31,11 @@ $highlight-color: lighten($light-gray, 20%);
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      flex-grow: 1; //nav-wrapper to fill the space
-      //padding-left: 20px; // Adds padding between the logo and nav items
+      flex-grow: 1;
 
       nav {
         display: flex;
-        justify-content: space-around; // Evenly spreads nav items
+        justify-content: space-around;
         width: 100%;
       }
 
@@ -45,22 +46,25 @@ $highlight-color: lighten($light-gray, 20%);
         transition: color 0.3s ease;
 
         &:hover, &:focus {
-          color: $highlight-color;
+          color: $logo-blue;  // Change to logo-blue for hover
         }
 
         &.active {
-          border-bottom: 2px solid $highlight-color;
+          border-bottom: 2px solid $logo-blue;
         }
       }
     }
-    .main-content {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      padding-bottom: 50px;
-    }
+  }
+
+  .main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
   }
 }
+
+// Mobile responsiveness
 @media (max-width: 768px) {
   .App-header {
     flex-direction: column;
