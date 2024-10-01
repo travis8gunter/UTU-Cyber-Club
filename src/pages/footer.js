@@ -21,7 +21,7 @@ export default function Footer() {
           </a>
           {/* Discord */}
           <a
-            href="https://discord.gg/your-discord-link">
+            href="https://discord.gg/PrzsTzWK3q">
             <FaDiscord className="social-icon" />
           </a>
         </div>
