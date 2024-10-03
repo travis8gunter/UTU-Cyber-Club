@@ -14,10 +14,17 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} alt='Logo' className='App-logo' />
+      <div class="fixed top-0 left-0 z-50 w-full bg-black">
+      <header className="flex flex-row justify-center sm:justify-between px-12 items-center py-4 sm:py-0">
+        <img src={logo} alt='Logo' className='h-24 hidden sm:block' />
+        <span class="flex flex-col gap-2 sm:hidden items-center justify-center">
+          <small>Utah Tech University</small>
+          <p className="font-bold sm:hidden text-xl text-center">Cyber Security Club</p>
+        </span>
+        
         <NavContainer />
       </header>
+      </div>
       <main className='main-content'>
         <Routes>
           <Route path='/' element={<Home />} />

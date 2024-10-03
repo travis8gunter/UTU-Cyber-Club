@@ -7,6 +7,10 @@ $logo-red: #C40217;   // Red from the logo
 $logo-blue: #0563C1;  // Blue from the logo
 $highlight-color: lighten($light-gray, 20%);
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 // App styles
 .App {
   background-color: $dark-gray;

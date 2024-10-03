@@ -116,3 +116,18 @@
     
 }
   
+
+.arrow-container {
+  width: 25px;
+  /* cubic-bezier-easing = sine / mehr Beispiele: https://easings.net/ */
+  animation: bounce 6s infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  height: 20px;
+  position: absolute;
+  bottom: 40px;
+}
+
+@keyframes bounce {
+50% {
+    transform: translateY(-20px);
+  }
+}

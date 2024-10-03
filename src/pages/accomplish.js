@@ -4,11 +4,13 @@ const AccomplishmentItem = ({ image, title, description, text }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="accomplishment-item" onClick={() => setIsOpen(!isOpen)}>
+    <div className="flex flex-col gap-8" onClick={() => setIsOpen(!isOpen)}>
       <img src={image} alt={title} />
-      <h3 className="item-title">{title}</h3> {/* Updated with className */}
-      <p className="short-description">{description}</p>
-      {isOpen && <p className="detailed-text">{text}</p>}
+      <div class="flex flex-col gap-4">
+        <h3 className="text-2xl font-bold">{title}</h3> {/* Updated with className */}
+        <p className="short-description text-gray-300">{description}</p>
+        {isOpen && <p className="detailed-text text-gray-300">{text}</p>}
+      </div>
     </div>
   );
 };

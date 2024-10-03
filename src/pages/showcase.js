@@ -37,7 +37,7 @@ const showcaseItems = [
 
 const Showcase = () => {
   return (
-    <div className="showcase">
+    <div className="showcase pt-36">
       {showcaseItems.map(item => (
         <div key={item.id} className="showcase-item">
             <h2>{item.title}</h2>
