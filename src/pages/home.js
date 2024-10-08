@@ -6,7 +6,7 @@ import nclImage from '../photos/ncl.jpeg';
 import ccdcImage from '../photos/CCDC.png';
 import nclSpring2024 from '../photos/NCL-spring2024.png'
 import AccomplishmentItem from '../pages/accomplish.js';
-import homeImage from '../photos/abstract-background.jpg';
+import homeImage from '../photos/backgroundBison.jpg';
 import clubNight from '../photos/clubnight.jpg';
 import learnImage from "../photos/NCL-TEAM-2.jpeg";
 import { NavLink } from 'react-router-dom';
@@ -19,21 +19,24 @@ export default class Home extends Component {
         <div className="home-page">
         
         {/* Full header image */}
-        <header className="h-screen flex flex-col gap-8 justify-center items-center bg-cover bg-center text-center p-8" style={{backgroundImage: "url(" + homeImage + ")"}}>
+        <header className="h-screen flex flex-col gap-8 justify-center items-start bg-cover bg-center p-8" style={{backgroundImage: "url(" + homeImage + ")"}}>
           {/* <img src={homeImage} alt="UTU Cyber Club" /> */}
-          <h2 class="text-2xl font-medium">Utah Tech University</h2>
-          <h1 class="text-7xl font-bold">Cyber Security Club</h1>
-          <small><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
-          <div class="arrow-container text-4xl"><FaAngleDown /></div>
+          <span class="bg-gray-900/50 p-12 flex flex-col gap-8 rounded-xl lg:w-1/3 md:w-1/2 backdrop-blur">
+            <h2 class="text-2xl font-medium">Utah Tech University</h2>
+            <h1 class="text-7xl font-bold">Cyber Security Club</h1>
+            <small><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
+          </span>
+          
+          <div class="arrow-container text-4xl self-center"><FaAngleDown /></div>
         </header>
 
         <section className="flex flex-col gap-12 items-center">
 
           {/* Meeting Time Section */}
-          <div className="flex flex-col gap-8 justify-center items-center py-16">
+          <div className="flex flex-col gap-8 justify-center items-center py-16 px-8">
             <h2 class="text-5xl font-bold">Meeting Time</h2>
             <small class="underline"><a class="underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
-            <p class="text-lg text-gray-300">Join us every Thursday at 7:00 PM in room 107 of the Smith building.</p>
+            <p class="text-lg text-gray-300 text-center">Join us every Thursday at 7:00 PM in room 107 of the Smith building.</p>
           </div>
           {/* Accomplishments section */}
         </section>
