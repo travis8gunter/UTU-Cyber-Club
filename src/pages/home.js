@@ -21,10 +21,10 @@ export default class Home extends Component {
         {/* Full header image */}
         <header className="h-screen flex flex-col gap-8 justify-center items-start bg-cover bg-center p-8" style={{backgroundImage: "url(" + homeImage + ")"}}>
           {/* <img src={homeImage} alt="UTU Cyber Club" /> */}
-          <span class="bg-gray-900/50 p-12 flex flex-col gap-8 rounded-xl lg:w-1/3 md:w-1/2 backdrop-blur">
-            <h2 class="text-2xl font-medium">Utah Tech University</h2>
-            <h1 class="text-7xl font-bold">Cyber Security Club</h1>
-            <small><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
+          <span class="bg-gray-900/50 p-8 sm:p-12 flex flex-col gap-8 rounded-xl lg:w-1/3 md:w-1/2 backdrop-blur">
+            <h2 class="text-2xl font-medium sm:text-left text-center">Utah Tech University</h2>
+            <h1 class="text-4xl sm:text-7xl font-bold sm:text-left text-center">Cyber Security Club</h1>
+            <small class="sm:text-left text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
           </span>
           
           <div class="arrow-container text-4xl self-center"><FaAngleDown /></div>
@@ -74,7 +74,7 @@ export default class Home extends Component {
         
 
         <div className='flex flex-col gap-12 items-center px-8 sm:px-24 py-20'>
-          <h2 class="text-5xl font-bold text-center mb-4">Our Accomplishments!</h2>
+          <h2 class="text-3xl sm:text-5xl font-bold text-center mb-4">Our Accomplishments!</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 gap-16'>
             <AccomplishmentItem 
               image={bsidesImage} 
