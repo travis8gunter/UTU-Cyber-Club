@@ -13,7 +13,12 @@ import Footer from './pages/footer.js';
 function App() {
   return (
     <Router>
-    <div className="App">
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet" />
+    </head>
+    <div className="App font-orbitron">
       <div class="fixed top-0 left-0 z-50 w-full bg-black">
       <header className="flex flex-row justify-center sm:justify-between px-12 items-center py-4 sm:py-0">
         <img src={logo} alt='Logo' className='h-24 hidden sm:block' />

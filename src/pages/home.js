@@ -6,7 +6,7 @@ import nclImage from '../photos/ncl.jpeg';
 import ccdcImage from '../photos/CCDC.png';
 import nclSpring2024 from '../photos/NCL-spring2024.png'
 import AccomplishmentItem from '../pages/accomplish.js';
-import homeImage from '../photos/backgroundBison.jpg';
+import homeImage from '../photos/abstract-background4.jpg';
 import clubNight from '../photos/clubnight.jpg';
 import learnImage from "../photos/NCL-TEAM-2.jpeg";
 import { NavLink } from 'react-router-dom';
@@ -17,18 +17,25 @@ export default class Home extends Component {
   render() {
     return (
         <div className="home-page">
-        
-        {/* Full header image */}
-        <header className="h-screen flex flex-col gap-8 justify-center items-start bg-cover bg-center p-8" style={{backgroundImage: "url(" + homeImage + ")"}}>
-          {/* <img src={homeImage} alt="UTU Cyber Club" /> */}
-          <span class="bg-gray-900/50 p-8 sm:p-12 flex flex-col gap-8 rounded-xl lg:w-1/3 md:w-1/2 backdrop-blur">
-            <h2 class="text-2xl font-medium sm:text-left text-center">Utah Tech University</h2>
-            <h1 class="text-4xl sm:text-7xl font-bold sm:text-left text-center">Cyber Security Club</h1>
-            <small class="sm:text-left text-center"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
-          </span>
-          
-          <div class="arrow-container text-4xl self-center"><FaAngleDown /></div>
-        </header>
+
+        <div class="w-full h-screen flex flex-col items-center md:items-start justify-center gap-16 px-4 md:px-32 text-center md:text-left bg-cover bg-center" style={{backgroundImage: "url(" + homeImage + ")"}}>
+            <div class="flex flex-col gap-6 max-w-prose">
+
+                <div class="flex flex-col gap-2">
+                    <a href="https://www.utahtech.edu" class="text-muted-foreground text-sm hover:underline">Utah Tech University</a>
+                    <p class="text-xl font-bold">Cyber Security Club</p>
+                </div>
+                
+                <h1 class="text-6xl font-bold"><span class="blue-glow">Security</span> Through <span class="red-glow">Hacking</span></h1>    
+
+            </div>
+            
+            <div class="flex flex-row gap-6">
+                {/* <Button href="/about" variant="outline" size="lg">Learn More</Button> */}
+                {/* <Button href="/join" size="lg">Join Now</Button> */}
+            </div>
+            <div class="arrow-container text-4xl self-center"><FaAngleDown /></div>
+        </div>
 
         <section className="flex flex-col gap-12 items-center">
 

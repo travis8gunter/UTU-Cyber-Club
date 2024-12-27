@@ -94,3 +94,87 @@ $highlight-color: lighten($light-gray, 20%);
     }
   }
 }
+
+.white-glow {
+  color: white;
+  text-shadow:
+      0 0 10px #fff,
+      0 0 30px #fff;
+}
+.blue-glow {
+  color: #009dff;
+  text-shadow:
+      0 0 20px #009dff,
+      0 0 50px #009dff;
+}
+.yellow-glow {
+  color: #ffff00;
+  text-shadow:
+      0 0 10px #ffff00,
+      0 0 20px #ffff00;
+}
+.green-glow {
+  color: #39ff14;
+  text-shadow:
+      0 0 10px #39ff14,
+      0 0 20px #39ff14;
+}
+.orange-glow {
+  color: #ff4500;
+  text-shadow:
+      0 0 10px #ff4500,
+      0 0 20px #ff4500;
+}
+.purple-glow {
+  color: #8a2be2;
+  text-shadow:
+      0 0 10px #8a2be2,
+      0 0 20px #8a2be2;
+}
+.teal-glow {
+  color: #00ffff;
+  text-shadow:
+      0 0 10px #00ffff,
+      0 0 20px #00ffff;
+}
+.gold-glow {
+  color: #ffd700;
+  text-shadow:
+      0 0 10px #ffd700,
+      0 0 20px #ffd700;
+}
+.red-glow {
+  color: #ff0000;
+  text-shadow:
+      0 0 20px #ff0000,
+      0 0 50px #ff0000;
+}
+.pink-glow {
+  color: #f7c4df;
+  text-shadow:
+      0 0 10px #ff1493,
+      0 0 20px #ff1493;
+}
+.silver-glow {
+  color: #c0c0c0;
+  text-shadow:
+      0 0 10px #c0c0c0,
+      0 0 20px #c0c0c0;
+}
+.brown-glow {
+  color: #8b4513;
+  text-shadow:
+      0 0 10px #8b4513,
+      0 0 20px #8b4513;
+}
+.coral-glow {
+  color: #ff6347;
+  text-shadow:
+      0 0 10px #ff6347,
+      0 0 20px #ff6347;
+}
+.font-orbitron {
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+}
+
