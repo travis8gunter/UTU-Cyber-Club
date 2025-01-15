@@ -43,7 +43,7 @@ export default class Home extends Component {
           <div className="flex flex-col gap-8 justify-center items-center py-16 px-8">
             <h2 class="text-5xl font-bold">Meeting Time</h2>
             <small class="underline"><a class="underline" href="https://docs.google.com/forms/d/e/1FAIpQLSdFnnT9a0iQ_h4a5cOgFw6i-vzziSEJdc49_VSzyRmHn4oP7A/viewform?fbzx=-6038488573771462056">Mark Your Attendance</a></small>
-            <p class="text-lg text-gray-300 text-center">Join us every Thursday at 7:00 PM in room 107 of the Smith building.</p>
+            <p class="text-lg text-gray-300 text-center">Join us every Friday at 7:00 PM in room 107 of the Smith building.</p>
           </div>
           {/* Accomplishments section */}
         </section>
